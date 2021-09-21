@@ -1,0 +1,21 @@
+» Add spacer to Dock:
+
+	$ defaults write com.apple.dock persistent-apps -array-add '{tile-type="spacer-tile";}'
+
+
+---
+
+
+» Increase Dock's Speed
+
+	$ defaults write com.apple.Dock autohide-delay -float 0
+
+	$ defaults write com.apple.dock autohide-time-modifier -float 0.4
+
+
+---
+
+
+» Confirm changes
+
+	$ killall Dock
