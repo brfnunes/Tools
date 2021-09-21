@@ -1,0 +1,1 @@
+Create dotfile named ".hushlogin" to hide login info in Terminal.

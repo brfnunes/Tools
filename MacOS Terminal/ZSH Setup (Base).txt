@@ -1,0 +1,27 @@
+# Install homebrew, use it to install Git, Python3.
+
+# Update Terminal's pip command.
+
+# Create empty ".zprofile" dotfile.
+
+
+
+# Create ".zshrc" dotfile and fill with info below.
+
+
+# Load version control information
+autoload -Uz vcs_info
+precmd() { vcs_info }
+
+# Format the vcs_info_msg_0_ variable
+zstyle ':vcs_info:git:*' formats '%F{245}on branch%f %B(%b) '
+ 
+# Set up the prompt (with git branch name)
+setopt PROMPT_SUBST
+
+#Add empty lines as spacer between commands
+#Prompt displayed in Terminal
+PROMPT='
+
+%B%%n%b %F{245}at%f %B%m%b %F{245}in%f %B${PWD/#$HOME/~}%b ${vcs_info_msg_0_}
+%B%F{255}»%f%b  '
