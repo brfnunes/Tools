@@ -1,16 +1,18 @@
-# Install homebrew, use it to install Git, Python3.
+// Install homebrew, use it to install Git, Python3.
 
 
+---
 
 
-# Create ".zprofile" dotfile and fill with info below.
+// Create ".zprofile" dotfile and fill with info below.
 
 export PATH="/usr/local/opt/python/libexec/bin:$PATH"
 
 
+---
 
 
-# Create ".zshrc" dotfile and fill with info below.
+// Create ".zshrc" dotfile and fill with info below.
 
 # Load version control information
 autoload -Uz vcs_info
